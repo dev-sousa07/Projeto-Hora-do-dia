@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportes</title>
+</head>
+<body>
+    <h1>Corrida</h1>
+    Escreva sua distância : <input type="number" name="ds" id="ds">
+    <input type="button" value="ok" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+        var d = window.document.querySelector('input#ds')
+        var res= window.document.querySelector('div#res')
+        var val = Number (d.value)
+        
+        res.innerText = `Sua corrida é ${ds}`
+        }
+    </script>
+</body>
+</html>
